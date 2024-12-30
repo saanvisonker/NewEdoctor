@@ -1,0 +1,105 @@
+.feedback-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px; /* Keeps container size controlled */
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .feedback-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+/*   
+  .feedback-header h2 {
+    font-size: 150px;
+    color: #333;
+  } */
+  
+  .feedback-header p {
+    font-size: 50px;
+    color: #0a0707;
+    margin-top: 650px;
+  }
+  
+  /* Feedback Cards Section */
+  .feedback-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Individual Feedback Item */
+  .feedback-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feedback-item:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+  }
+  
+  /* Feedback Item Header (Doctor info) */
+  .feedback-item-header {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-item-header p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Feedback Comment */
+  .feedback-comment {
+    margin: 10px 0;
+  }
+  
+  .feedback-comment p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Like Button */
+  .like-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .like-button:hover {
+    background-color: #45a049;
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+   

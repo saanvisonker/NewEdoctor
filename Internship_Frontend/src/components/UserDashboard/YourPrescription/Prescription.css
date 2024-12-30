@@ -1,0 +1,143 @@
+/* Scope all styles to .prescription-component to ensure uniqueness */
+.prescription-component {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e8f9f7;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .prescription-component .prescription-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1e7e1;
+  }
+  
+  .prescription-component header h1 {
+    text-align: center;
+    color: #29b6b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .prescription-component .prescription-card {
+    border: 1px solid #29b6b3;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f0fdfd;
+  }
+  
+  .prescription-component .header-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .prescription-component .header-section h2 {
+    color: #29b6b3;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .prescription-component .header-section p {
+    margin: 5px 0;
+    color: #616161;
+    font-size: 1rem;
+  }
+  
+  .prescription-component .doctor-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .prescription-component .doctor-details-column {
+    width: 45%;
+  }
+  
+  .prescription-component .doctor-details-column p {
+    margin-bottom: 10px;
+  }
+  
+  .prescription-component .patient-section p,
+  .prescription-component .details-section p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #4e5d6c;
+  }
+  
+  .prescription-component .footer-section {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 2px solid #d1e7e1;
+    color: #4e5d6c;
+  }
+  
+  .prescription-component .footer-section p {
+    margin: 10px 0;
+  }
+  
+  .prescription-component .error-message {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .prescription-component .loading-message {
+    color: #3498db;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .prescription-component .download-button {
+    background-color: #29b6b3;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prescription-component .download-button:hover {
+    background-color: #027b75;
+  }
+  
+  .prescription-component .prescription-container hr {
+    border: 1px solid #b2dfdb;
+  }
+  
+  .prescription-component .header-section h2,
+  .prescription-component .footer-section p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #29b6b3;
+  }
+  
+  @media (max-width: 768px) {
+    .prescription-component .doctor-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .prescription-component .doctor-details-column {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .prescription-component .prescription-container {
+      padding: 15px;
+    }
+  
+    .prescription-component .download-button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

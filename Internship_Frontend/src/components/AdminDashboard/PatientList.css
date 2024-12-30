@@ -1,0 +1,77 @@
+/* src/components/PatientList.css */
+
+.patient-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+  }
+  
+  .patient-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new row if space runs out */
+    gap: 50px; /* Adds space between the cards */
+    justify-content: center; /* Align items to the center */
+    padding: 20px;
+  }
+  
+  .patient-card {
+    background: #fff;
+    border: 2px solid #900; /* Match the red border in your example */
+    border-radius: 10px;
+    width: 250px; /* Fixed width for the cards */
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .patient-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .patient-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .patient-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #900; /* Red border around image */
+  }
+  
+  .patient-details {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .patient-details p {
+    margin: 5px 0;
+  }
+  
+  .patient-details p strong {
+    font-size: 18px;
+    color: #900; /* Match the red text for the patient's name */
+  }
+  
+  .delete-patient-button {
+    background-color: #900;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .delete-patient-button:hover {
+    background-color: #b30000;
+  }
+  

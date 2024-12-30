@@ -1,0 +1,58 @@
+ .feedback-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .feedback-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards if they exceed the container width */
+    gap: 20px; /* Adds spacing between the cards */
+    justify-content: center; /* Centers the cards horizontally */
+    width: 100%; /* Makes cards responsive */
+  }
+  
+  .feedback-card {
+    display: flex;
+    flex-direction: column; /* Align image and details vertically within a card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Sets a fixed width for the cards */
+  }
+  
+  .doctor-image-container {
+    margin-bottom: 15px;
+    text-align: center; /* Centers the image horizontally */
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .doctor-details {
+    text-align: center; /* Centers the text inside the card */
+  }
+  
+  .feedback-button { /* Changed class name */
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback-button:hover { /* Changed class name */
+    background-color: #218838;
+  }
+  
+  
+  

@@ -1,0 +1,230 @@
+/* General styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  /* Login Container */
+  .login-container {
+    background-color:rgba(247, 243, 243, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Increased width */
+    max-width: 90%; /* Responsive width for smaller screens */
+    box-sizing: border-box; /* Ensure padding does not affect overall width */
+  }
+  
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input.invalid-password {
+    border: 2px solid red; /* Highlight invalid password input */
+  }
+  
+  /* Error message box */
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .error-message ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .error-message li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Register Link */
+  .register-link-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link {
+    color: #007BFF;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Specific Scoping for Login */
+  .login-page .login-container {
+    width: 800px; /* Increase width slightly for this specific page */
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password-link {
+    color: #4188d3; /* Blue color */
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px; /* Space between Remember Me and Forgot Password text */
+  }
+  
+  .forgot-password-link:hover {
+    color: #0056b3; /* Darker blue when hovered */
+  }
+  
+  /* Align Remember Me and Forgot Password text in the same row */
+  .remember-forgot-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Space between this section and the next form elements */
+  }
+  
+  /* Remember Me Checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 8px;
+  }
+  
+  .remember-me label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Scoped CSS for ForgotPassword Component */
+.forgot-password-container {
+  width: 150%;
+  max-width: 500px; /* Increased width */
+  height: 400px; /* Increased height */
+  margin: 0 auto;
+  padding: 30px; /* Increased padding */
+  background-color: #9ec7d3;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.forgot-password-container .form-group {
+  margin-bottom: 15px;
+}
+
+.forgot-password-container label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.forgot-password-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e8d7d7;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.forgot-password-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-password-container button:hover {
+  background-color: #45a049;
+}
+
+.forgot-password-container .message-box {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: #f44336;
+  border: 2px solid #f44336;
+}

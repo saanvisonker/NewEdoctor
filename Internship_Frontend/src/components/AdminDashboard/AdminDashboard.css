@@ -1,0 +1,201 @@
+/* Admin Dashboard Styles */
+.admin-dashboard .dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.admin-dashboard .sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.admin-dashboard .profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-dashboard .profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #1abc9c;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard .admin-email {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-dashboard .menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-dashboard .menu-item {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard .menu-item:hover,
+.admin-dashboard .menu-item.active {
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 5px;
+}
+
+.admin-dashboard .main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.admin-dashboard .Admin-navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the extreme right */
+  align-items: center;
+  background-color: #34495e;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.admin-dashboard .Admin-navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between items */
+}
+
+.admin-dashboard .Admin-navbar li {
+  list-style: none;
+}
+
+.admin-dashboard .Admin-navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-dashboard .Admin-navbar a:hover {
+  background-color: #1abc9c; /* Hover effect */
+  color: white;
+}
+
+.admin-dashboard .Admin-navbar span {
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.admin-dashboard .cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.admin-dashboard .card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: center;
+}
+
+.admin-dashboard .card h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ .card p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #900;
+}
+
+.admin-dashboard .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard .dashboard-container {
+    flex-direction: column;
+  }
+
+  .admin-dashboard .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .admin-dashboard .main-content {
+    padding: 15px;
+  }
+
+  .admin-dashboard .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .admin-dashboard .card {
+    width: 100%;
+  }
+}
+
+.Admin-navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the extreme right */
+  align-items: center;
+  background-color: #34495e;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.Admin-navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between items */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+.Admin-navbar li {
+  list-style: none; /* Ensure no bullets */
+}
+
+.Admin-navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Admin-navbar a:hover {
+  background-color: #1abc9c; /* Add hover effect */
+  color: white;
+}
+
+.Admin-navbar span {
+  font-weight: bold;
+  color: #ecf0f1;
+  margin-right: 20px; /* Add spacing for clarity */
+}

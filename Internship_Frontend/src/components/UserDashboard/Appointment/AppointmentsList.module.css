@@ -1,0 +1,110 @@
+/* Container for the entire appointments component */
+.appointmentsContainer {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  width: 100%; /* Full viewport width */
+  height: 100%; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the appointments table */
+.appointmentsTable {
+  width: 100%;
+  height: 100%; /* Ensure table stretches vertically */
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.appointmentsTable th,
+.appointmentsTable td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Border for the table cells */
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.appointmentsTable th {
+  background-color: #678cb4;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.appointmentsTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for the status box */
+.statusBox {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Colors for different statuses */
+.statusBox.PENDING {
+  background-color: #ffeb3b;
+  color: #856404;
+}
+
+.statusBox.ACCEPTED {
+  background-color: #28a745;
+  color: white;
+}
+
+.statusBox.COMPLETED {
+  background-color: #28a745;
+  color: white;
+}
+
+.statusBox.REJECTED {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Cancel button styling */
+.cancelButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #b30000;
+}
+
+/* Styling for empty state message */
+.emptyMessage {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Download button styling */
+.downloadButton {
+  background-color: #8400ff;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Small button size */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3;
+}
